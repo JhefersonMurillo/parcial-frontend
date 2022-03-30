@@ -15,14 +15,6 @@ class Layout extends React.Component {
     };
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    if (prevState.contador !== this.state.contador) {
-      console.log("Actualizado... ");
-      this.setState({
-        historial: [...this.state.historial, this.state.seleccionPrevia],
-      });
-    }
-  }
   /*  handleClick = (e) => {
     const id = e.target.id;
     if (this.state.contador >= 7) {
@@ -68,6 +60,14 @@ class Layout extends React.Component {
       );
     }
   };
+
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.contador !== this.state.contador) {
+      this.setState({
+        historial: [...this.state.historial, this.state.seleccionPrevia],
+      });
+    }
+  }
 
   filtrarHistoriaporId = () => {
     const { contador, seleccionPrevia } = this.state;
