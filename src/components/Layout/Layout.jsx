@@ -15,32 +15,6 @@ class Layout extends React.Component {
     };
   }
 
-  /*  handleClick = (e) => {
-    const id = e.target.id;
-    if (this.state.contador >= 7) {
-      alert("Fin.");
-    } else if (id === "A" && this.state.seleccionPrevia !== "A") {
-      this.setState({
-        contador: this.state.contador + 1,
-        seleccionPrevia: "A",
-      });
-    } else if (id === "A" && this.state.seleccionPrevia === "A") {
-      this.setState({
-        contador: this.state.contador + 2,
-      });
-    } else if (id === "B" && this.state.seleccionPrevia === "A") {
-      this.setState({
-        contador: this.state.contador + 3,
-        seleccionPrevia: "B",
-      });
-    } else if (id === "B") {
-      this.setState({
-        contador: this.state.contador + 2,
-        seleccionPrevia: "B",
-      });
-    }
-  }; */
-
   handleClick = ({ target }) => {
     const opcion = target.id;
     if (this.state.contador === 5) {

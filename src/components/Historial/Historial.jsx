@@ -1,8 +1,8 @@
 import React from "react";
 
 function Historial({ seleccionPrevia, historial }) {
-  const historialModificado = [...historial].pop();
-
+  const historialModificado = [...historial];
+  historialModificado.pop();
   return (
     <div className="recordatorio">
       <h3>Selección anterior: {seleccionPrevia}</h3>
