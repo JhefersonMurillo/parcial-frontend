@@ -1,8 +1,8 @@
 import React from "react";
 
-import Opciones from "../Opciones/Opciones";
+import Opciones from "../opciones/Opciones";
 import data from "../data.json";
-import Historial from "../Historial/Historial";
+import Historial from "../historial/Historial";
 
 class Layout extends React.Component {
   constructor(props) {
